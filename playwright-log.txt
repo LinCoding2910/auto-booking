@@ -1,0 +1,98 @@
+{"level":"info","time":"2026-09-11T13:07:55.467Z","seq":1,"component":"browser-library","msg":"Listening on 127.0.0.1:63595"}
+{"level":"info","time":"2026-09-11T13:07:56.570Z","seq":2,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"started"}
+{"level":"info","time":"2026-09-11T13:07:57.850Z","seq":3,"component":"browser-library","msg":"Adding browser to stack: chromium, version: 151.0.7922.34"}
+{"level":"info","time":"2026-09-11T13:07:57.851Z","seq":4,"component":"browser-library","msg":"Adding 0 contexts to browser"}
+{"level":"info","time":"2026-09-11T13:07:57.851Z","seq":5,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:07:57.856Z","seq":6,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"started"}
+{"level":"info","time":"2026-09-11T13:07:57.856Z","seq":7,"component":"browser-library","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
+{"level":"info","time":"2026-09-11T13:07:57.856Z","seq":8,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b3ce82ddcdf10e77b715e45bfe2e8600\"},\"name\":\"chromium\",\"id\":\"browser=cde52e0e-bdf2-4114-84e0-8fa1ba1f1648\",\"headless\":false}"}
+{"level":"info","time":"2026-09-11T13:07:57.856Z","seq":9,"component":"browser-library","msg":"Trace file: "}
+{"level":"info","time":"2026-09-11T13:07:57.906Z","seq":10,"component":"browser-library","msg":"Setting default timeout for context context=05ee2e27-3632-42fb-bc0a-393c7bde06c9 to 10000"}
+{"level":"info","time":"2026-09-11T13:07:57.907Z","seq":11,"component":"browser-library","msg":"Changed active context: context=05ee2e27-3632-42fb-bc0a-393c7bde06c9"}
+{"level":"info","time":"2026-09-11T13:07:57.907Z","seq":12,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:07:57.910Z","seq":13,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-09-11T13:07:57.911Z","seq":14,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=05ee2e27-3632-42fb-bc0a-393c7bde06c9\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@846e66a7951258ca5afe766cbda0c8e9\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b3ce82ddcdf10e77b715e45bfe2e8600\"},\"name\":\"chromium\",\"id\":\"browser=cde52e0e-bdf2-4114-84e0-8fa1ba1f1648\",\"headless\":false}"}
+{"level":"info","time":"2026-09-11T13:07:58.488Z","seq":15,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-09-11T13:07:58.488Z","seq":16,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-11T13:08:00.171Z","seq":17,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:00.176Z","seq":18,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:00.176Z","seq":19,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_txtUserName in page."}
+{"level":"info","time":"2026-09-11T13:08:00.218Z","seq":20,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:00.221Z","seq":21,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:00.221Z","seq":22,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_txtPassword in page."}
+{"level":"info","time":"2026-09-11T13:08:00.234Z","seq":23,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:00.237Z","seq":24,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:00.237Z","seq":25,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Log On'] in page."}
+{"level":"info","time":"2026-09-11T13:08:00.757Z","seq":26,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:00.760Z","seq":27,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:00.760Z","seq":28,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Click Here'] in page."}
+{"level":"info","time":"2026-09-11T13:08:00.847Z","seq":29,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:00.850Z","seq":30,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:00.851Z","seq":31,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:01.154Z","seq":32,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-11T13:08:01.166Z","seq":33,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:01.166Z","seq":34,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_optGolfCourseID_4 in page."}
+{"level":"warn","time":"2026-09-11T13:08:01.194Z","seq":35,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:143:5"}
+{"level":"info","time":"2026-09-11T13:08:01.247Z","seq":36,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:01.249Z","seq":37,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:01.249Z","seq":38,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_cboDate in page."}
+{"level":"warn","time":"2026-09-11T13:08:01.422Z","seq":39,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:143:5"}
+{"level":"warn","time":"2026-09-11T13:08:02.995Z","seq":40,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:143:5"}
+{"level":"info","time":"2026-09-11T13:08:03.041Z","seq":41,"component":"browser-library","msg":"Option entries: 5"}
+{"level":"info","time":"2026-09-11T13:08:03.041Z","seq":42,"component":"browser-library","msg":"Selected entries: 1"}
+{"level":"info","time":"2026-09-11T13:08:03.041Z","seq":43,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:03.043Z","seq":44,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:03.043Z","seq":45,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_cboSession in page."}
+{"level":"warn","time":"2026-09-11T13:08:04.418Z","seq":46,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:143:5"}
+{"level":"info","time":"2026-09-11T13:08:04.462Z","seq":47,"component":"browser-library","msg":"Option entries: 2"}
+{"level":"info","time":"2026-09-11T13:08:04.462Z","seq":48,"component":"browser-library","msg":"Selected entries: 1"}
+{"level":"info","time":"2026-09-11T13:08:04.462Z","seq":49,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:04.464Z","seq":50,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:04.464Z","seq":51,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_cboTeeTime in page."}
+{"level":"info","time":"2026-09-11T13:08:04.473Z","seq":52,"component":"browser-library","msg":"Option entries: 12"}
+{"level":"info","time":"2026-09-11T13:08:04.474Z","seq":53,"component":"browser-library","msg":"Selected entries: 1"}
+{"level":"info","time":"2026-09-11T13:08:04.474Z","seq":54,"component":"browser-library","event_kind":"grpc","action":"selectOption","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:04.476Z","seq":55,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:04.476Z","seq":56,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Next'] in page."}
+{"level":"info","time":"2026-09-11T13:08:04.688Z","seq":57,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:04.692Z","seq":58,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:04.692Z","seq":59,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Next'] in page."}
+{"level":"warn","time":"2026-09-11T13:08:04.716Z","seq":60,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:142:5"}
+{"level":"info","time":"2026-09-11T13:08:04.780Z","seq":61,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:04.782Z","seq":62,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:04.782Z","seq":63,"component":"browser-library","msg":"Strict mode is enabled, find Locator with css=#ctl00_cpMain_chkTerm in page."}
+{"level":"warn","time":"2026-09-11T13:08:05.120Z","seq":64,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:142:5"}
+{"level":"info","time":"2026-09-11T13:08:05.180Z","seq":65,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:05.182Z","seq":66,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:05.182Z","seq":67,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Confirm'] in page."}
+{"level":"info","time":"2026-09-11T13:08:05.212Z","seq":68,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:05.214Z","seq":69,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:05.214Z","seq":70,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='here'] in page."}
+{"level":"warn","time":"2026-09-11T13:08:05.578Z","seq":71,"component":"browser-library","event_kind":"internal_error","status":"failed","error_type":"ReferenceError","msg":"ReferenceError: $ is not defined\n    at https://www.kotapermaionline.com.my/booking-New-facility.aspx:142:5"}
+{"level":"info","time":"2026-09-11T13:08:14.551Z","seq":72,"component":"browser-library","msg":"Removed page=50bc9bc7-b77b-43cd-812b-563b4ef39bfc from context=05ee2e27-3632-42fb-bc0a-393c7bde06c9 page stack"}
+{"level":"warn","time":"2026-09-11T13:08:14.555Z","seq":73,"component":"browser-library","msg":"Supress locator.click: Target page, context or browser has been closed error"}
+{"level":"info","time":"2026-09-11T13:08:14.555Z","seq":74,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:14.559Z","seq":75,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:14.559Z","seq":76,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=05ee2e27-3632-42fb-bc0a-393c7bde06c9\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@846e66a7951258ca5afe766cbda0c8e9\"},\"pageStack\":[{\"id\":\"page=a44a48da-53fc-491e-89ee-379242dec8a7\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@b202117e25b23c25646f59cf03fb732a\"},\"timestamp\":1789132078.488,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"current-password\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"https://www.kotapermaionline.com.my/login.aspx\",\"line\":0,\"column\":0,\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2026-09-11T13:08:00.129Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b3ce82ddcdf10e77b715e45bfe2e8600\"},\"name\":\"chromium\",\"id\":\"browser=cde52e0e-bdf2-4114-84e0-8fa1ba1f1648\",\"headless\":false}"}
+{"level":"info","time":"2026-09-11T13:08:14.685Z","seq":77,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-09-11T13:08:14.685Z","seq":78,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-11T13:08:15.131Z","seq":79,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.136Z","seq":80,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.140Z","seq":81,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.141Z","seq":82,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.141Z","seq":83,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.142Z","seq":84,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.142Z","seq":85,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.144Z","seq":86,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.145Z","seq":87,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.146Z","seq":88,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changed active context: context=05ee2e27-3632-42fb-bc0a-393c7bde06c9"}
+{"level":"info","time":"2026-09-11T13:08:15.146Z","seq":89,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changing current active page: page=4e5cf9d9-8db4-41a5-b929-bafbd1f4179b"}
+{"level":"info","time":"2026-09-11T13:08:15.146Z","seq":90,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-11T13:08:15.149Z","seq":91,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.167Z","seq":92,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Removed page=8aab253f-d62a-4de0-a5c0-fbe46304ef94 from context=05ee2e27-3632-42fb-bc0a-393c7bde06c9 page stack"}
+{"level":"info","time":"2026-09-11T13:08:15.169Z","seq":93,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Removed page=02a50b1b-6bd2-4b9c-9c16-11fa78bb8c08 from context=05ee2e27-3632-42fb-bc0a-393c7bde06c9 page stack"}
+{"level":"info","time":"2026-09-11T13:08:15.171Z","seq":94,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.175Z","seq":95,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.175Z","seq":96,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-11T13:08:15.222Z","seq":97,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"started"}
+{"level":"info","time":"2026-09-11T13:08:15.309Z","seq":98,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"succeeded"}

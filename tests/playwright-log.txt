@@ -1,0 +1,57 @@
+{"level":"info","time":"2026-09-06T10:12:00.742Z","seq":1,"component":"browser-library","msg":"Listening on 127.0.0.1:56974"}
+{"level":"info","time":"2026-09-06T10:12:01.857Z","seq":2,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:03.237Z","seq":3,"component":"browser-library","msg":"Adding browser to stack: chromium, version: 151.0.7922.34"}
+{"level":"info","time":"2026-09-06T10:12:03.242Z","seq":4,"component":"browser-library","msg":"Adding 0 contexts to browser"}
+{"level":"info","time":"2026-09-06T10:12:03.243Z","seq":5,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:03.250Z","seq":6,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:03.250Z","seq":7,"component":"browser-library","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
+{"level":"info","time":"2026-09-06T10:12:03.251Z","seq":8,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@2678dc17c9604879d64ffc2d6be7e5eb\"},\"name\":\"chromium\",\"id\":\"browser=c088bf76-dad6-4c68-ba3e-b3a805702c3b\",\"headless\":false}"}
+{"level":"info","time":"2026-09-06T10:12:03.251Z","seq":9,"component":"browser-library","msg":"Trace file: "}
+{"level":"info","time":"2026-09-06T10:12:03.298Z","seq":10,"component":"browser-library","msg":"Setting default timeout for context context=0573f44d-50f8-4a51-8884-c2404df02757 to 10000"}
+{"level":"info","time":"2026-09-06T10:12:03.298Z","seq":11,"component":"browser-library","msg":"Changed active context: context=0573f44d-50f8-4a51-8884-c2404df02757"}
+{"level":"info","time":"2026-09-06T10:12:03.298Z","seq":12,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:03.309Z","seq":13,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:03.309Z","seq":14,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=0573f44d-50f8-4a51-8884-c2404df02757\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@86b27d4e230da86066f7680be4f459fd\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@2678dc17c9604879d64ffc2d6be7e5eb\"},\"name\":\"chromium\",\"id\":\"browser=c088bf76-dad6-4c68-ba3e-b3a805702c3b\",\"headless\":false}"}
+{"level":"info","time":"2026-09-06T10:12:03.890Z","seq":15,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-09-06T10:12:03.890Z","seq":16,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-06T10:12:04.417Z","seq":17,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:04.426Z","seq":18,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:04.426Z","seq":19,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='English 7,189,000+ articles'] in page."}
+{"level":"info","time":"2026-09-06T10:12:05.647Z","seq":20,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:05.650Z","seq":21,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:05.650Z","seq":22,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=button[name='I already donated'] in page."}
+{"level":"info","time":"2026-09-06T10:12:06.080Z","seq":23,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:06.083Z","seq":24,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:06.083Z","seq":25,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=button[name='Close'] in page."}
+{"level":"info","time":"2026-09-06T10:12:06.123Z","seq":26,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:06.126Z","seq":27,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:06.126Z","seq":28,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=President William McKinley was shot and fatally wounded on September 6, 1901, in page."}
+{"level":"info","time":"2026-09-06T10:12:06.181Z","seq":29,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:06.184Z","seq":30,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:06.184Z","seq":31,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Lebanon war'] in page."}
+{"level":"info","time":"2026-09-06T10:12:06.324Z","seq":32,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:06.326Z","seq":33,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:06.326Z","seq":34,"component":"browser-library","msg":"Strict mode is enabled, find Locator with role=link[name='Israeli-occupied Lebanese'] in page."}
+{"level":"info","time":"2026-09-06T10:12:16.329Z","seq":35,"component":"browser-library","event_kind":"grpc","action":"click","status":"failed"}
+{"level":"error","time":"2026-09-06T10:12:16.329Z","seq":36,"component":"browser-library","event_kind":"grpc_error","status":"failed","error_type":"TimeoutError2","msg":"locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('role=link[name=\\'Israeli-occupied Lebanese\\']')\u001b[22m\n\n    at internalClick (/Users/lin09/Documents/Coding/auto-booking/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js:12895:19)\n    at async click (/Users/lin09/Documents/Coding/auto-booking/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js:12876:18)\n    at async PlaywrightServer.click (/Users/lin09/Documents/Coding/auto-booking/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js:14364:26)"}
+{"level":"info","time":"2026-09-06T10:12:16.333Z","seq":37,"component":"browser-library","event_kind":"grpc","action":"takeScreenshot","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.333Z","seq":38,"component":"browser-library","Take screenshot with options: ":{"path":"/Users/lin09/Documents/Coding/auto-booking/tests/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":"info","time":"2026-09-06T10:12:16.515Z","seq":39,"component":"browser-library","event_kind":"grpc","action":"takeScreenshot","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.528Z","seq":40,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.529Z","seq":41,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.530Z","seq":42,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.530Z","seq":43,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.531Z","seq":44,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.531Z","seq":45,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.537Z","seq":46,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.538Z","seq":47,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.539Z","seq":48,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changed active context: context=0573f44d-50f8-4a51-8884-c2404df02757"}
+{"level":"info","time":"2026-09-06T10:12:16.539Z","seq":49,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changing current active page: page=91693912-0c02-4af1-91f9-052e043bd180"}
+{"level":"info","time":"2026-09-06T10:12:16.539Z","seq":50,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-09-06T10:12:16.552Z","seq":51,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.572Z","seq":52,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","msg":"Removed page=7570951d-301d-43a1-9786-f9cc8b0fe74a from context=0573f44d-50f8-4a51-8884-c2404df02757 page stack"}
+{"level":"info","time":"2026-09-06T10:12:16.573Z","seq":53,"suite_id":"s1","suite_name":"Recorded Test","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.579Z","seq":54,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.579Z","seq":55,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-09-06T10:12:16.607Z","seq":56,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"started"}
+{"level":"info","time":"2026-09-06T10:12:16.809Z","seq":57,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"succeeded"}

@@ -1,2 +1,2 @@
-My first automation project created by following progression plan created by AI. Trying to learn new concepts like robot framework, browser and playwright which are concepts or applications used in this auto-booking system. 
+My first automation project created by following progression plan created by AI. Trying to learn new concepts like robot framework, browser and playwright which are concepts or tools used in this sports facilities auto-booking system. 
 It's been a long time since I've last coded or programmed anything. 

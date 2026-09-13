@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.7 on darwin)" generated="2026-09-04T15:33:10.054419" rpa="false" schemaversion="5">
+<suite id="s1" name="Hello &amp; Browser">
+<suite id="s1-s1" name="Hello" source="/Users/lin09/Documents/Coding/auto-booking/tests/hello.robot">
+<test id="s1-s1-t1" name="My First Test" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-04T15:33:10.090247" level="INFO">Hello Tennis!</msg>
+<arg>Hello Tennis!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-04T15:33:10.090014" elapsed="0.000287"/>
+</kw>
+<status status="PASS" start="2026-09-04T15:33:10.089429" elapsed="0.001000"/>
+</test>
+<doc>My first automation test</doc>
+<status status="PASS" start="2026-09-04T15:33:10.088503" elapsed="0.002200"/>
+</suite>
+<suite id="s1-s2" name="Browser" source="/Users/lin09/Documents/Coding/auto-booking/tests/browser.robot">
+<test id="s1-s2-t1" name="Open Website" line="4">
+<kw name="New Browser chromium headless=False">
+<msg time="2026-09-04T15:33:10.092432" level="FAIL">No keyword with name 'New Browser chromium headless=False' found.</msg>
+<status status="FAIL" start="2026-09-04T15:33:10.092399" elapsed="0.000072">No keyword with name 'New Browser chromium headless=False' found.</status>
+</kw>
+<kw name="New Page https://www.google.com">
+<status status="NOT RUN" start="2026-09-04T15:33:10.092599" elapsed="0.000015"/>
+</kw>
+<kw name="Sleep 3 seconds">
+<status status="NOT RUN" start="2026-09-04T15:33:10.092692" elapsed="0.000014"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" start="2026-09-04T15:33:10.092780" elapsed="0.000011"/>
+</kw>
+<status status="FAIL" start="2026-09-04T15:33:10.091711" elapsed="0.001192">No keyword with name 'New Browser chromium headless=False' found.</status>
+</test>
+<status status="FAIL" start="2026-09-04T15:33:10.091001" elapsed="0.002082"/>
+</suite>
+<status status="FAIL" start="2026-09-04T15:33:10.055562" elapsed="0.037813"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Hello &amp; Browser" id="s1" pass="1" fail="1" skip="0">Hello &amp; Browser</stat>
+<stat name="Hello" id="s1-s1" pass="1" fail="0" skip="0">Hello &amp; Browser.Hello</stat>
+<stat name="Browser" id="s1-s2" pass="0" fail="1" skip="0">Hello &amp; Browser.Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-09-04T15:33:10.049629" level="ERROR">Error in file '/Users/lin09/Documents/Coding/auto-booking/tests/browser.robot' on line 2: Non-existing setting 'Library Browser'.</msg>
+</errors>
+</robot>
