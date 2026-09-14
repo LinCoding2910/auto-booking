@@ -1,5 +1,7 @@
 *** Settings ***
 Library    Browser
+Library    timing.py
+Suite Setup    Wait Until Booking Opens    ${BOOKING_OPENS_AT}    ${TIMEZONE}
 
 *** Variables ***
 ${BROWSER}          chromium
@@ -8,9 +10,11 @@ ${LOGIN_URL}        https://www.kotapermaionline.com.my/login.aspx
 ${MEMBERSHIP_NO}    %{MEMBERSHIP_NO}
 ${PASSWORD}         %{PASSWORD}
 ${SPORT}            css=#ctl00_cpMain_optGolfCourseID_4
-${BOOKING_DATE}     14/Sep/2026
+${BOOKING_DATE}     17/Sep/2026
+${BOOKING_OPENS_AT}    2026-09-14 16:01
+${TIMEZONE}            Asia/Kuala_Lumpur
 ${TABLE}            Table 2
-${TEE_TIME}         10:00 AM
+${TEE_TIME}         11:00 AM
 ${BOOKING_LIST}     https://www.kotapermaionline.com.my/bookingListfacility.aspx
 
 *** Test Cases ***
@@ -35,5 +39,3 @@ Book Table Tennis
 
     Click    css=#ctl00_cpMain_chkTerm
     Click    role=link[name='Confirm']
-    Click    role=link[name='here']
-    New Page    ${BOOKING_LIST}
