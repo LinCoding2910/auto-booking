@@ -1,24 +1,8 @@
 name: Run Booking Automation
 
 on:
-  workflow_dispatch:
-    inputs:
-      booking_date:
-        description: "Date to book, for example 17/Sep/2026"
-        required: true
-        default: "17/Sep/2026"
-      booking_opens_at:
-        description: "Opening time in Malaysia time, for example 2026-09-14 16:01"
-        required: true
-        default: "2026-09-14 16:01"
-      table:
-        description: "Session or table to book"
-        required: true
-        default: "Table 2"
-      tee_time:
-        description: "Tee time, for example 11:00 AM"
-        required: true
-        default: "11:00 AM"
+  schedule:
+    - cron: "58 12 * * 0,1,2,3"
 
 jobs:
   booking:
@@ -27,6 +11,8 @@ jobs:
     env:
       MEMBERSHIP_NO: ${{ secrets.MEMBERSHIP_NO }}
       PASSWORD: ${{ secrets.PASSWORD }}
+      # Change this to the venue's actual opening rule.
+      DAYS_BEFORE: 4
 
     steps:
       - name: Check out repository
@@ -46,14 +32,22 @@ jobs:
       - name: Install Playwright browser
         run: uv run rfbrowser init
 
+      - name: Calculate booking values
+        id: booking_values
+        run: |
+          opening_date="$(TZ=Asia/Kuala_Lumpur date +%F)"
+          booking_date="$(TZ=Asia/Kuala_Lumpur date -d "$opening_date + $DAYS_BEFORE days" +%d/%b/%Y)"
+          opening_time="$(TZ=Asia/Kuala_Lumpur date '+%Y-%m-%d %H:%M')"
+
+          echo "booking_date=${booking_date}" >> "$GITHUB_OUTPUT"
+          echo "booking_opens_at=${opening_time}" >> "$GITHUB_OUTPUT"
+
       - name: Run booking automation
         run: >-
           uv run robot
           --variable HEADLESS:True
-          --variable BOOKING_DATE:"${{ inputs.booking_date }}"
-          --variable BOOKING_OPENS_AT:"${{ inputs.booking_opens_at }}"
-          --variable TABLE:"${{ inputs.table }}"
-          --variable TEE_TIME:"${{ inputs.tee_time }}"
+          --variable BOOKING_DATE:"${{ steps.booking_values.outputs.booking_date }}"
+          --variable BOOKING_OPENS_AT:"${{ steps.booking_values.outputs.booking_opens_at }}"
           booking.robot
 
       - name: Upload Robot results

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.7 on darwin)" generated="2026-09-14T15:59:28.179834" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.7 on darwin)" generated="2026-09-19T19:07:08.340098" rpa="false" schemaversion="5">
 <suite id="s1" name="Booking" source="/Users/lin09/Documents/Coding/auto-booking/booking.robot">
-<kw name="Wait Until Booking Opens" owner="hello" type="SETUP">
+<kw name="Wait Until Booking Opens" owner="timing" type="SETUP">
 <arg>${BOOKING_OPENS_AT}</arg>
 <arg>${TIMEZONE}</arg>
 <doc>Wait until ``opens_at`` before allowing the Robot test to continue.</doc>
-<status status="PASS" start="2026-09-14T15:59:28.433786" elapsed="91.569882"/>
+<status status="PASS" start="2026-09-19T19:07:08.630537" elapsed="0.002794"/>
 </kw>
 <test id="s1-t1" name="Book Table Tennis" line="21">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-09-14T16:01:00.011705" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/lin09/Documents/Coding/auto-booking/browser/traces/temp/f16a8e59-4326-4455-835f-e4b07f14f27b"}</msg>
-<msg time="2026-09-14T16:01:00.199488" level="INFO">Starting Browser process /Users/lin09/Documents/Coding/auto-booking/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52708</msg>
-<msg time="2026-09-14T16:01:03.174781" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/lin09/Documents/Coding/auto-booking/browser/traces/temp/f16a8e59-4326-4455-835f-e4b07f14f27b"}</msg>
+<msg time="2026-09-19T19:07:08.634705" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/lin09/Documents/Coding/auto-booking/browser/traces/temp/bc4671ee-5647-496d-8f90-3b16ddf31018"}</msg>
+<msg time="2026-09-19T19:07:08.857374" level="INFO">Starting Browser process /Users/lin09/Documents/Coding/auto-booking/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:64120</msg>
+<msg time="2026-09-19T19:07:12.134454" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/lin09/Documents/Coding/auto-booking/browser/traces/temp/bc4671ee-5647-496d-8f90-3b16ddf31018"}</msg>
 <arg>${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-09-14T16:01:00.009390" elapsed="3.165728"/>
+<status status="PASS" start="2026-09-19T19:07:08.634068" elapsed="3.500730"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-09-14T16:01:03.177695" level="INFO">{
+<msg time="2026-09-19T19:07:12.137407" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -34,141 +34,141 @@
     "height": 1080
   }
 }</msg>
-<msg time="2026-09-14T16:01:03.238750" level="INFO">Successfully created context. </msg>
-<msg time="2026-09-14T16:01:03.238985" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<msg time="2026-09-19T19:07:12.183945" level="INFO">Successfully created context. </msg>
+<msg time="2026-09-19T19:07:12.184024" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-09-14T16:01:03.175619" elapsed="0.063563"/>
+<status status="PASS" start="2026-09-19T19:07:12.135359" elapsed="0.048749"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-09-14T16:01:04.904178" level="INFO">Successfully initialized new page object and opened url: https://www.kotapermaionline.com.my/login.aspx</msg>
+<msg time="2026-09-19T19:07:14.256333" level="INFO">Successfully initialized new page object and opened url: https://www.kotapermaionline.com.my/login.aspx</msg>
 <arg>${LOGIN_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-09-14T16:01:03.239615" elapsed="1.665458"/>
+<status status="PASS" start="2026-09-19T19:07:12.184317" elapsed="2.073623"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-09-14T16:01:04.915362" level="INFO">Fills the text 'IS05307-0' in the given field.</msg>
+<msg time="2026-09-19T19:07:14.261713" level="INFO">Fills the text 'IS05307-0' in the given field.</msg>
 <arg>css=#ctl00_cpMain_txtUserName</arg>
 <arg>${MEMBERSHIP_NO}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:04.908613" elapsed="0.060716"/>
+<status status="PASS" start="2026-09-19T19:07:14.259195" elapsed="0.047073"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-09-14T16:01:04.970065" level="INFO">Fills the text '#Jmac0259' in the given field.</msg>
+<msg time="2026-09-19T19:07:14.307054" level="INFO">Fills the text '#Jmac0259' in the given field.</msg>
 <arg>css=#ctl00_cpMain_txtPassword</arg>
 <arg>${PASSWORD}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:04.969550" elapsed="0.013806"/>
+<status status="PASS" start="2026-09-19T19:07:14.306530" elapsed="0.014075"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:04.984107" level="INFO">Clicks the element 'role=link[name='Log On']'.</msg>
+<msg time="2026-09-19T19:07:14.321379" level="INFO">Clicks the element 'role=link[name='Log On']'.</msg>
 <arg>role=link[name='Log On']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:04.983604" elapsed="0.356658"/>
+<status status="PASS" start="2026-09-19T19:07:14.320878" elapsed="0.347681"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:05.340958" level="INFO">Clicks the element 'role=link[name='Click Here']'.</msg>
+<msg time="2026-09-19T19:07:14.669356" level="INFO">Clicks the element 'role=link[name='Click Here']'.</msg>
 <arg>role=link[name='Click Here']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:05.340477" elapsed="0.093192"/>
+<status status="PASS" start="2026-09-19T19:07:14.668848" elapsed="0.098403"/>
 </kw>
 <kw name="Switch Page" owner="Browser">
-<msg time="2026-09-14T16:01:05.434781" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
-<msg time="2026-09-14T16:01:05.639408" level="INFO">Activated new page page=a84bd852-c2c9-4d9a-9074-72da5cce3af8</msg>
+<msg time="2026-09-19T19:07:14.768106" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2026-09-19T19:07:15.033505" level="INFO">Activated new page page=622b88b8-8a94-42b9-98a1-e022b3366d94</msg>
 <arg>NEW</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2026-09-14T16:01:05.433979" elapsed="0.205726"/>
+<status status="PASS" start="2026-09-19T19:07:14.767483" elapsed="0.266328"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:05.641053" level="INFO">Clicks the element 'css=#ctl00_cpMain_optGolfCourseID_4'.</msg>
+<msg time="2026-09-19T19:07:15.035661" level="INFO">Clicks the element 'css=#ctl00_cpMain_optGolfCourseID_4'.</msg>
 <arg>${SPORT}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:05.640151" elapsed="0.069049"/>
+<status status="PASS" start="2026-09-19T19:07:15.034649" elapsed="0.065784"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-09-14T16:01:05.710160" level="INFO">Selects the option(s) 17/Sep/2026 by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboDate.</msg>
+<msg time="2026-09-19T19:07:15.101290" level="INFO">Selects the option(s) 22/Sep/2026 by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboDate.</msg>
 <arg>css=#ctl00_cpMain_cboDate</arg>
 <arg>value</arg>
 <arg>${BOOKING_DATE}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:05.709500" elapsed="1.906605"/>
+<status status="PASS" start="2026-09-19T19:07:15.100700" elapsed="1.721228"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-09-14T16:01:07.617358" level="INFO">Selects the option(s) Table 2 by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboSession.</msg>
+<msg time="2026-09-19T19:07:16.822714" level="INFO">Selects the option(s) Table 2 by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboSession.</msg>
 <arg>css=#ctl00_cpMain_cboSession</arg>
 <arg>value</arg>
 <arg>${TABLE}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:07.616554" elapsed="1.341733"/>
+<status status="PASS" start="2026-09-19T19:07:16.822169" elapsed="1.345789"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-09-14T16:01:08.959061" level="INFO">Selects the option(s) 11:00 AM by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboTeeTime.</msg>
+<msg time="2026-09-19T19:07:18.168787" level="INFO">Selects the option(s) 11:00 AM by attribute SelectAttribute.value from element css=#ctl00_cpMain_cboTeeTime.</msg>
 <arg>css=#ctl00_cpMain_cboTeeTime</arg>
 <arg>value</arg>
 <arg>${TEE_TIME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:08.958510" elapsed="0.011271"/>
+<status status="PASS" start="2026-09-19T19:07:18.168201" elapsed="0.010683"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:08.970481" level="INFO">Clicks the element 'role=link[name='Next']'.</msg>
+<msg time="2026-09-19T19:07:18.179709" level="INFO">Clicks the element 'role=link[name='Next']'.</msg>
 <arg>role=link[name='Next']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:08.970036" elapsed="0.041404"/>
+<status status="PASS" start="2026-09-19T19:07:18.179212" elapsed="0.042837"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:09.012156" level="INFO">Clicks the element 'role=link[name='Next']'.</msg>
+<msg time="2026-09-19T19:07:18.222693" level="INFO">Clicks the element 'role=link[name='Next']'.</msg>
 <arg>role=link[name='Next']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:09.011685" elapsed="0.179085"/>
+<status status="PASS" start="2026-09-19T19:07:18.222255" elapsed="0.177831"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:09.191440" level="INFO">Clicks the element 'css=#ctl00_cpMain_chkTerm'.</msg>
+<msg time="2026-09-19T19:07:18.400751" level="INFO">Clicks the element 'css=#ctl00_cpMain_chkTerm'.</msg>
 <arg>css=#ctl00_cpMain_chkTerm</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:09.190984" elapsed="0.182954"/>
+<status status="PASS" start="2026-09-19T19:07:18.400290" elapsed="0.183492"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-09-14T16:01:09.374744" level="INFO">Clicks the element 'role=link[name='Confirm']'.</msg>
+<msg time="2026-09-19T19:07:18.585176" level="INFO">Clicks the element 'role=link[name='Confirm']'.</msg>
 <arg>role=link[name='Confirm']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-09-14T16:01:09.374239" elapsed="0.035636"/>
+<status status="PASS" start="2026-09-19T19:07:18.584349" elapsed="0.037894"/>
 </kw>
-<msg time="2026-09-14T16:01:09.417435" level="INFO">Switching context to context=211cecc7-c871-4a31-bcd1-6f36ba54fa4b in CURRENT</msg>
-<msg time="2026-09-14T16:01:09.492778" level="INFO">Successfully changed active context: context=211cecc7-c871-4a31-bcd1-6f36ba54fa4b</msg>
-<msg time="2026-09-14T16:01:09.522480" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-09-14T16:01:00.005928" elapsed="9.404244"/>
+<msg time="2026-09-19T19:07:18.632970" level="INFO">Switching context to context=c4592da0-b2e8-43fa-bab0-da1d06ea6b71 in CURRENT</msg>
+<msg time="2026-09-19T19:07:18.702474" level="INFO">Successfully changed active context: context=c4592da0-b2e8-43fa-bab0-da1d06ea6b71</msg>
+<msg time="2026-09-19T19:07:18.747653" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-09-19T19:07:08.633471" elapsed="9.989086"/>
 </test>
-<status status="PASS" start="2026-09-14T15:59:28.180898" elapsed="101.342614"/>
+<status status="PASS" start="2026-09-19T19:07:08.341180" elapsed="10.407600"/>
 </suite>
 <statistics>
 <total>
