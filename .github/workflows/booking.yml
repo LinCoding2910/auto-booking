@@ -1,0 +1,67 @@
+name: Run Booking Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      booking_date:
+        description: "Date to book, for example 17/Sep/2026"
+        required: true
+        default: "17/Sep/2026"
+      booking_opens_at:
+        description: "Opening time in Malaysia time, for example 2026-09-14 16:01"
+        required: true
+        default: "2026-09-14 16:01"
+      table:
+        description: "Session or table to book"
+        required: true
+        default: "Table 2"
+      tee_time:
+        description: "Tee time, for example 11:00 AM"
+        required: true
+        default: "11:00 AM"
+
+jobs:
+  booking:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MEMBERSHIP_NO: ${{ secrets.MEMBERSHIP_NO }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install project dependencies
+        run: uv sync --locked
+
+      - name: Install Playwright browser
+        run: uv run rfbrowser init
+
+      - name: Run booking automation
+        run: >-
+          uv run robot
+          --variable HEADLESS:True
+          --variable BOOKING_DATE:"${{ inputs.booking_date }}"
+          --variable BOOKING_OPENS_AT:"${{ inputs.booking_opens_at }}"
+          --variable TABLE:"${{ inputs.table }}"
+          --variable TEE_TIME:"${{ inputs.tee_time }}"
+          booking.robot
+
+      - name: Upload Robot results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-results
+          path: |
+            output.xml
+            log.html
+            report.html
