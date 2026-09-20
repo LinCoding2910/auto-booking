@@ -18,7 +18,7 @@ ${TEE_TIME}         8:00 AM
 ${BOOKING_LIST}     https://www.kotapermaionline.com.my/bookingListfacility.aspx
 
 *** Test Cases ***
-Book Table Tennis
+Book Pickleball
     New Browser    ${BROWSER}    headless=${HEADLESS}
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page    ${LOGIN_URL}
