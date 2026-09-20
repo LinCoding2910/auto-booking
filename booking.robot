@@ -9,12 +9,12 @@ ${HEADLESS}         False
 ${LOGIN_URL}        https://www.kotapermaionline.com.my/login.aspx
 ${MEMBERSHIP_NO}    %{MEMBERSHIP_NO}
 ${PASSWORD}         %{PASSWORD}
-${SPORT}            css=#ctl00_cpMain_optGolfCourseID_4
+${SPORT}            role=radio[name='Pickleball']
 ${BOOKING_DATE}     22/Sep/2026
 ${BOOKING_OPENS_AT}    2026-09-14 16:07
 ${TIMEZONE}            Asia/Kuala_Lumpur
-${TABLE}            Table 2
-${TEE_TIME}         11:00 AM
+${TABLE}            Court 2
+${TEE_TIME}         8:00 AM
 ${BOOKING_LIST}     https://www.kotapermaionline.com.my/bookingListfacility.aspx
 
 *** Test Cases ***
