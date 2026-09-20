@@ -14,7 +14,7 @@ ${BOOKING_DATE}     22/Sep/2026
 ${BOOKING_OPENS_AT}    2026-09-14 16:07
 ${TIMEZONE}            Asia/Kuala_Lumpur
 ${TABLE}            Court 2
-${TEE_TIME}         8:00 AM
+${TEE_TIME}         7:00 AM
 ${BOOKING_LIST}     https://www.kotapermaionline.com.my/bookingListfacility.aspx
 
 *** Test Cases ***
