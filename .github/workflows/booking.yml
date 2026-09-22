@@ -14,7 +14,7 @@ jobs:
       MEMBERSHIP_NO: ${{ secrets.MEMBERSHIP_NO }}
       PASSWORD: ${{ secrets.PASSWORD }}
       # Change this to the venue's actual opening rule.
-      DAYS_BEFORE: 4
+      DAYS_BEFORE: 3
 
     steps:
       - name: Check out repository
