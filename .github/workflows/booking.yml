@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "35 12 * * 0,1,2,3"
 
 jobs:
   booking:
@@ -14,7 +14,8 @@ jobs:
       MEMBERSHIP_NO: ${{ secrets.MEMBERSHIP_NO }}
       PASSWORD: ${{ secrets.PASSWORD }}
       # Change this to the venue's actual opening rule.
-      DAYS_BEFORE: 3
+      DAYS_BEFORE: 4
+      OPENING_TIME: "21:00"
 
     steps:
       - name: Check out repository
@@ -39,7 +40,7 @@ jobs:
         run: |
           opening_date="$(TZ=Asia/Kuala_Lumpur date +%F)"
           booking_date="$(TZ=Asia/Kuala_Lumpur date -d "$opening_date + $DAYS_BEFORE days" +%d/%b/%Y)"
-          opening_time="$(TZ=Asia/Kuala_Lumpur date '+%Y-%m-%d %H:%M')"
+          opening_time="$(TZ=Asia/Kuala_Lumpur date +%F) ${OPENING_TIME}"
 
           echo "booking_date=${booking_date}" >> "$GITHUB_OUTPUT"
           echo "booking_opens_at=${opening_time}" >> "$GITHUB_OUTPUT"
