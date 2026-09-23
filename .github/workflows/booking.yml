@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "35 12 * * 0,1,2,3"
+    - cron: "35 7 * * 0,1,2,3"
 
 jobs:
   booking:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 300
     env:
       MEMBERSHIP_NO: ${{ secrets.MEMBERSHIP_NO }}
       PASSWORD: ${{ secrets.PASSWORD }}
