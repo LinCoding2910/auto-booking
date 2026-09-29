@@ -15,7 +15,7 @@ jobs:
       PASSWORD: ${{ secrets.PASSWORD }}
       # Change this to the venue's actual opening rule.
       DAYS_BEFORE: 4
-      OPENING_TIME: "21:00"
+      OPENING_TIME: "20:59:58"
 
     steps:
       - name: Check out repository

@@ -13,7 +13,7 @@ def wait_until_booking_opens(
     """Wait until ``opens_at`` before allowing the Robot test to continue.
 
     ``opens_at`` may be written as ``14/Sep/2026 08:00 AM`` or as an ISO
-    datetime such as ``2026-09-14 08:00``. If the opening time has already
+    datetime such as ``2026-09-14 08:00:00``. If the opening time has already
     passed, the function returns immediately.
     """
     if poll_interval <= 0:
@@ -34,12 +34,17 @@ def _parse_opening_time(opens_at: str, timezone_name: str) -> datetime:
     except Exception as error:
         raise ValueError(f"Unknown timezone: {timezone_name}") from error
 
-    for format_string in ("%d/%b/%Y %I:%M %p", "%Y-%m-%d %H:%M"):
+    for format_string in (
+        "%d/%b/%Y %I:%M %p",
+        "%Y-%m-%d %H:%M:%S",
+        "%Y-%m-%d %H:%M",
+    ):
         try:
             return datetime.strptime(opens_at, format_string).replace(tzinfo=timezone)
         except ValueError:
             continue
 
     raise ValueError(
-        "opens_at must use 'DD/Mon/YYYY HH:MM AM/PM' or 'YYYY-MM-DD HH:MM'"
+        "opens_at must use 'DD/Mon/YYYY HH:MM AM/PM', "
+        "'YYYY-MM-DD HH:MM:SS', or 'YYYY-MM-DD HH:MM'"
     )
