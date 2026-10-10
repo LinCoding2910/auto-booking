@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "35 7 * * 0,1,2,3"
+    - cron: "35 5 * * 0,1,2,3,6"
 
 jobs:
   booking:
